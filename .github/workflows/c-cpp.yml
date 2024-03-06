@@ -37,8 +37,8 @@ jobs:
       with:
         repository: qmk/qmk_firmware
         fetch-depth: 0
-        fetch-tags: true
-        ref: 'develop'
+        fetch-tags: false
+        ref: 'annepro2_core_matrix'
         submodules: recursive
     - name: Checkout keymap MacVim
       uses: actions/checkout@v4
