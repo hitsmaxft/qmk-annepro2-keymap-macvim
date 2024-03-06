@@ -5,7 +5,7 @@ permissions:
 
 on:
   push:
-    branches: [noexist]
+    branches: [master]
   workflow_dispatch:
     inputs:
       branch:
