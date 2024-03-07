@@ -31,14 +31,14 @@ jobs:
     steps:
     - name: Disable safe.directory check
       run : git config --global --add safe.directory '*'
-      
+
     - name: Checkout QMK
       uses: actions/checkout@v4
       with:
         repository: qmk/qmk_firmware
         fetch-depth: 0
         fetch-tags: false
-        ref: 'annepro2_core_matrix'
+        ref: 'develop'
         submodules: recursive
     - name: Checkout keymap MacVim
       uses: actions/checkout@v4
