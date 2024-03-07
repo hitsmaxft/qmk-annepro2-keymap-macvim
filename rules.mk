@@ -15,7 +15,7 @@ COMMAND_ENABLE = no # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 
 # Custom RGB matrix handling
-RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_ENABLE = no
 
 QMK_SETTINGS = yes
 TAP_DANCE_ENABLE = no
