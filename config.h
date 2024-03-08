@@ -4,3 +4,5 @@
 #define MOUSEKEY_TIME_TO_MAX 60
 
 #define MATRIX_IO_DELAY 40
+
+#define DEBOUNCE 4
