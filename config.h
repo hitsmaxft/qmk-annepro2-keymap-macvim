@@ -5,4 +5,4 @@
 
 #define MATRIX_IO_DELAY 40
 
-#define DEBOUNCE 4
+#define DEBOUNCE 5
