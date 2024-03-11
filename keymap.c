@@ -16,6 +16,14 @@
 
 #include QMK_KEYBOARD_H
 
+enum {
+    OS_UNSURE,
+    OS_LINUX,
+    OS_WINDOWS,
+    OS_MACOS,
+    OS_IOS,
+} os_variant_t;
+
 enum anne_pro_layers {
     BASE,
     FN1,
@@ -103,4 +111,38 @@ enum anne_pro_layers {
     _______, _______,    _______,                                     _______,                   _______,       MO(FN2),       MO(FN1),       _______
  ),
 };
+
+void keyboard_post_init_user(void) {
+  // Customise these values to desired behaviour
+  debug_enable=true;
+  debug_matrix=true;
+  //debug_keyboard=true;
+  //debug_mouse=true;
+}
+
+/*
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    switch (detected_os) {
+        case OS_MACOS:
+        case OS_IOS:
+            rgb_matrix_set_color_all(RGB_WHITE);
+            break;
+        case OS_WINDOWS:
+            rgb_matrix_set_color_all(RGB_BLUE);
+            break;
+        case OS_LINUX:
+            rgb_matrix_set_color_all(RGB_ORANGE);
+            break;
+        case OS_UNSURE:
+            rgb_matrix_set_color_all(RGB_RED);
+            break;
+    }
+
+    return true;
+}
+*/
+
 // clang-format on

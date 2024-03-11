@@ -14,6 +14,8 @@ CONSOLE_ENABLE = no # Console for debug
 COMMAND_ENABLE = no # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 
+# OS_DETECTION_ENABLE = yes
+
 # Custom RGB matrix handling
 RGB_MATRIX_ENABLE = yes
 
